@@ -1,0 +1,56 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+  ],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "linebreak-style": "off",
+    "no-confusing-arrow": ["error", {
+      "allowParens": true
+    }],
+    "react/jsx-filename-extension": ["error", {
+      "extensions": [".js", ".jsx"]
+    }],
+    "no-mixed-operators": ["error", {
+      "allowSamePrecedence": false
+    }],
+    "no-plusplus": ["error", {
+      "allowForLoopAfterthoughts": true
+    }],
+    "no-extend-native": ["error", {
+      "exceptions": ["Number", "String"]
+    }],
+    "consistent-return": "off",
+    "react/jsx-boolean-value": ["error", "always"],
+    "no-restricted-properties": "off",
+    "no-console": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-multi-comp": ["off", {
+      "ignoreStateless": true
+    }],
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "import/no-unresolved": "off",
+    "no-return-assign": "off"
+  },
+  "globals": {
+    "backEvents": true,
+    "homeInstance": true,
+    "atob": true,
+    "btoa": true,
+    "__DEV__": false
+  }
+}
