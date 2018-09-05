@@ -8,7 +8,7 @@ const heightWithStatusBar = !StatusBar.currentHeight
   ? height - STATUSBAR_HEIGHT
   : height - StatusBar.currentHeight;
 
-const googlePlaceToken = 'AIzaSyBRjU1Q37PUUGKSHA7yVcTlw9S3SzWOByQ';
+const googlePlaceToken = 'googlePlaceToken';
 
 export {
   width,
